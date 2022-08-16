@@ -60,7 +60,7 @@ public class MyMemoryService {
 
     private String getTranslationFromApi(String messageContent, String lang, String detectedLanguage, String messageId, Optional<Instant> edited_date) {
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<MyMemoryResponse> response = restTemplate.getForEntity("https://api.mymemory.translated.net/get?q=" + messageContent + "&langpair=" + lang, MyMemoryResponse.class);
+        ResponseEntity<MyMemoryResponse> response = restTemplate.getForEntity("https://api.mymemory.translated.net/get?q=" + messageContent + "&langpair=" + lang + "&key=" + token, MyMemoryResponse.class);
 
         MyMemoryResponse body = response.getBody();
         ResponseData responseBody = body.getResponseData();
