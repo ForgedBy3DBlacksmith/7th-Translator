@@ -11,7 +11,7 @@
     <groupId>com.seventh</groupId>
     <artifactId>7thTranslate</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>7th Translator</name>
+    <name>7th-Translator</name>
     <description>Discord translation bot for 7th Dimension</description>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
